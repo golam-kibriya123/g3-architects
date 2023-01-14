@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    color: #131313;
+    color: var(--second-color);
 
 }
 
@@ -16,30 +16,40 @@ body {
 
 
 /* ========> reuseable styles start<====== */
+:root {
+    --header-bgc: rgba(255, 144, 14, 0.1);
+    --primary-color: #727272;
+    --second-color: #131313;
+    --third-color: #FF900E;
+    --white: #ffff;
+
+}
+
 .description {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     padding: 24px 0 30px 0;
+    color: var(--primary-color);
 
-    color: #727272;
+
+
 }
 
 .title {
     font-style: normal;
     font-weight: 700;
     font-size: 45px;
-    color: #131313;
+    color: var(--second-color);
 }
 
-.header-container {
-    width: 100%;
-    max-width: 1100px;
+.container {
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .button {
-    background-color: #FF900E;
+    background-color: var(--third-color);
     border: none;
     padding: 20px 40px;
     border-radius: 8px;
@@ -50,7 +60,7 @@ body {
 
 .button>a {
     text-decoration: none;
-    color: #ffff;
+    color: var(--white);
 }
 
 /* ========> reuseable styles end<====== */
@@ -58,7 +68,7 @@ body {
 
 /* ===========>header section <========== */
 header {
-    background: rgba(255, 144, 14, 0.1);
+    background: var(--header-bgc);
     width: 100%;
     padding: 40px 0 40px 0;
 }
@@ -100,6 +110,41 @@ header {
     width: 100%;
 }
 
+/* ===========< our features >============ */
+.our-features {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 90px 0 130px 0;
+}
+
+.features-images {
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.features-images img {
+    width: 242px;
+    height: 242px;
+}
+
+.features-details {
+    width: 50%;
+}
+
+.quick-list-color {
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.features-color {
+    color: var(--third-color);
+}
+
 /* ============================ */
 /* responsive design */
 /* ============================ */
@@ -121,5 +166,22 @@ header {
         flex-direction: column;
         padding-right: 0px;
         width: 30%;
+    }
+
+    /* features-images */
+    .our-features {
+        flex-direction: column;
+
+
+    }
+
+    .features-images {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        gap: 0;
+    }
+
+    .features-images img {
+        width: 100%;
     }
 }
