@@ -1,0 +1,125 @@
+/* =======> common styles <====== */
+* {
+    margin: 0;
+    padding: 0;
+    color: #131313;
+
+}
+
+body {
+    max-width: 1270px;
+    text-transform: capitalize;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+
+
+/* ========> reuseable styles start<====== */
+.description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 24px 0 30px 0;
+
+    color: #727272;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.button {
+    background-color: #FF900E;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.button>a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+/* ========> reuseable styles end<====== */
+
+
+/* ===========>header section <========== */
+header {
+    background: rgba(255, 144, 14, 0.1);
+    width: 100%;
+    padding: 40px 0 40px 0;
+}
+
+.navber {
+    margin-bottom: 110px;
+
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    width: 50%;
+}
+
+.nav-items {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-items li {
+    list-style: none;
+}
+
+.nav-items li a {
+    text-decoration: none;
+}
+
+/* ==========> banner <======== */
+.banner {
+    text-align: center;
+
+}
+
+.banner-image img {
+    width: 100%;
+}
+
+/* ============================ */
+/* responsive design */
+/* ============================ */
+@media screen and (max-width: 576px) {
+    .navber {
+        padding: 0;
+    }
+
+    .nav-title {
+        width: 70%;
+
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        padding-right: 0px;
+        width: 30%;
+    }
+}
