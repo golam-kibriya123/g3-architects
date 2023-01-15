@@ -297,6 +297,100 @@ header {
     filter: grayscale(1);
 }
 
+/* ==========> contact with us <========= */
+.contact-us {
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.26);
+    margin-bottom: 100px;
+    border-radius: 8px;
+
+}
+
+.contact {
+    width: 60%;
+}
+
+.contact h1 {
+    color: var(--primary-color);
+}
+
+.contact>p {
+    padding: 20px;
+    font-weight: 700;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: baseline;
+    height: 45px;
+
+}
+
+.contact-info li h1 {
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.contact-form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 2px solid var(--primary-color);
+    border-right: 2px solid var(--primary-color);
+}
+
+.contact-form label {
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.contact-form label span {
+    position: relative;
+
+}
+
+.contact-form label span::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    background-color: var(--second-color);
+    left: 3px;
+    top: 15px;
+}
+
+.contact-form label input,
+#massage {
+    border: none;
+    outline: none;
+}
+
+
+.contact-form .button {
+    position: absolute;
+    right: 20px;
+    top: 162px;
+    color: var(--white);
+    background-color: var(--primary-color);
+}
+
+.contact-img {
+    width: 40%;
+}
+
+.contact-img img {
+    height: 525px;
+    width: 90%;
+    border-radius: 8px;
+}
+
 /* ============> footer <============= */
 footer {
     background-color: var(--footer-bgc);
@@ -310,6 +404,7 @@ footer p {
     padding: 40px 0;
     color: var(--primary-color);
 }
+
 
 /* ============================ */
 /* responsive design */
@@ -363,18 +458,24 @@ footer p {
     }
 
     .feature-articles,
-    .article-img {
+    .article-img,
+    .contact,
+    .title {
         width: 100%;
     }
 
     .title {
-        width: 100%;
         font-size: 28px;
         padding: 0;
     }
 
+    .article-title {
+        padding-left: 10px;
+        padding-bottom: 5px;
+    }
+
     .article-title::after {
-        height: 80px;
+        height: 70px;
     }
 
     .article-img>button {
@@ -395,6 +496,29 @@ footer p {
     .sponsors {
         flex-direction: column;
         gap: 50px;
+    }
+
+    /* .contact-with us*/
+    .contact-us {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .contact-form label span::after {
+        width: 150px;
+    }
+
+    #massage {
+        display: none;
+    }
+
+    .contact-form>.button {
+        top: 180px;
+    }
+
+    .contact-img {
+        display: none;
     }
 
     /* footer */
