@@ -498,21 +498,27 @@ footer p {
         align-items: center;
         margin: 100px 10px;
     }
-
+    .contact-form{
+        position: relative;
+    }
     .contact-form label span::after {
         width: 140px;
     }
 
    
     #massage {
-        right: 50px;
+        height: 10px;
         width: 140px;
         opacity: 1;
     }
-
+.textarea{
+position: absolute;
+left: 20px;
+bottom: -20px;
+}
 
     .contact-form>.button {
-        top: 200px;
+        top: 160px;
     }
 
     .contact-img {
