@@ -22,6 +22,8 @@ body {
     --second-color: #131313;
     --third-color: #FF900E;
     --white: #ffff;
+    --footer-bgc: #FFF4E7;
+
 
 }
 
@@ -295,6 +297,19 @@ header {
     filter: grayscale(1);
 }
 
+/* ============> footer <============= */
+footer {
+    background-color: var(--footer-bgc);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    padding: 40px 0;
+    color: var(--primary-color);
+}
 
 /* ============================ */
 /* responsive design */
@@ -352,8 +367,10 @@ header {
         width: 100%;
     }
 
-    .article-title {
-        font-size: 35px;
+    .title {
+        width: 100%;
+        font-size: 28px;
+        padding: 0;
     }
 
     .article-title::after {
@@ -377,6 +394,11 @@ header {
     /* our sponsors */
     .sponsors {
         flex-direction: column;
-        gap:50px;
+        gap: 50px;
+    }
+
+    /* footer */
+    footer p {
+        font-size: 8px;
     }
 }
