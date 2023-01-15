@@ -153,8 +153,7 @@ header {
 }
 
 .feature-articles {
-    width: 45%;
-
+    width: 40%;
     height: 90%;
 }
 
@@ -176,7 +175,7 @@ header {
 }
 
 .blog {
-    padding: 30px 42px 30px 30px;
+    padding: 0px 10px 0px 20px;
     margin: 20px 0;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
@@ -194,14 +193,14 @@ header {
 
 .article-img img {
     width: 100%;
-    height: 100%;
+    height: 93%;
 }
 
 .article-img button {
     padding: 25px 45px;
     position: absolute;
-    left: -30px;
-    bottom: -20px;
+    left: -80px;
+    bottom: 20px;
     margin: 0;
 }
 
@@ -209,6 +208,70 @@ header {
     color: var(--white);
 
 }
+
+/* Some Facts  */
+.facts {
+    margin-top: 100px;
+    margin-bottom: 180px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    padding: 0 50px;
+}
+
+.fact {
+    text-align: center;
+    border: 1px solid var(--third-color);
+    padding: 48px 35px;
+    border-radius: 8px;
+    position: relative;
+
+}
+
+.fact img {
+    width: 45px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 3px solid var(--white);
+}
+
+.fact h1 {
+    color: #424242;
+
+}
+
+.fact::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 136, 123, 0.3);
+    bottom: 2px;
+    right: 2px;
+    border-radius: 100% 0 8px 0;
+    transition: 2s, 2s, 2s, 2s;
+    z-index: -1;
+}
+
+
+.fact:hover.fact h1 {
+    color: white;
+    transition: 2s, 2s, 2s, 2s;
+}
+
+.fact:hover.fact p {
+    color: white;
+    transition: 2s, 2s, 2s, 2s;
+}
+
+.fact:hover::after {
+    border-radius: 8px;
+    width: 98%;
+    height: 98%;
+    background-color: rgb(250, 128, 114, 0.6);
+}
+
+
 
 /* ============================ */
 /* responsive design */
@@ -261,21 +324,30 @@ header {
         padding: 20px;
     }
 
-    .feature-articles {
-        width: 100%;
-    }
-    .article-title{
-        font-size: 35px;
-    }
-    .article-title::after{
-        height: 80px;
-    }
+    .feature-articles,
     .article-img {
         width: 100%;
+    }
+
+    .article-title {
+        font-size: 35px;
+    }
+
+    .article-title::after {
+        height: 80px;
     }
 
     .article-img>button {
         bottom: 0;
         left: 0;
+    }
+
+    /* .facts */
+    .some-facts>div {
+        padding: 0 40px;
+    }
+
+    .facts {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
