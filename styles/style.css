@@ -372,7 +372,6 @@ header {
     outline: none;
 }
 
-
 .contact-form .button {
     position: absolute;
     right: 20px;
@@ -504,12 +503,16 @@ footer p {
         width: 140px;
     }
 
+   
     #massage {
-        display: none;
+        right: 50px;
+        width: 140px;
+        opacity: 1;
     }
 
+
     .contact-form>.button {
-        top: 180px;
+        top: 200px;
     }
 
     .contact-img {
