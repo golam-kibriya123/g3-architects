@@ -415,11 +415,6 @@ footer p {
         flex-direction: column;
     }
 
-    .title {
-        width: 90%;
-
-    }
-
 
     .nav-items {
         flex-direction: column;
@@ -506,7 +501,7 @@ footer p {
     }
 
     .contact-form label span::after {
-        width: 150px;
+        width: 140px;
     }
 
     #massage {
