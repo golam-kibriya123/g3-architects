@@ -256,12 +256,12 @@ header {
 
 .fact:hover.fact h1 {
     color: white;
-    transition: 2s, 2s, 2s, 2s;
+    transition: 2s;
 }
 
 .fact:hover.fact p {
     color: white;
-    transition: 2s, 2s, 2s, 2s;
+    transition: 2s;
 }
 
 .fact:hover::after {
@@ -271,6 +271,29 @@ header {
     background-color: rgb(250, 128, 114, 0.6);
 }
 
+/* our sponsors */
+.our-sponsors {
+    width: 100%;
+    margin-bottom: 130px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sponsors {
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.sponsor img {
+    filter: grayscale(1);
+}
 
 
 /* ============================ */
@@ -349,5 +372,11 @@ header {
 
     .facts {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* our sponsors */
+    .sponsors {
+        flex-direction: column;
+        gap:50px;
     }
 }
